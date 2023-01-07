@@ -22,3 +22,12 @@ available in the development environment):
 ```bash
 rename 's/-/_/g' apps/*
 ```
+
+## Pending Tests
+
+Some exercises have pending tests and I prefer to run all of them without having
+to bother with `mix test --include pending`, so I remove all pending tags with:
+
+```bash
+sed -i -e '/@tag :pending/d' apps/**/test/*_test.exs
+```
