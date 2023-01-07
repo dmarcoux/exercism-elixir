@@ -20,7 +20,7 @@ Then proceed to download exercises as usual with `exercism download
 ## Continuous Integration
 
 The exercises are organized under an umbrella project to easily run `mix format`
-and other tools accross all exercises at once. It's an excuse to use what I've
+and other tools across all exercises at once. It's an excuse to use what I've
 learned about continuous integration for Elixir projects.
 
 For umbrella projects, directory and application names have to match. Exercism
