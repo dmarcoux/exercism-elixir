@@ -6,6 +6,17 @@ Solutions for the exercises from the Exercism Elixir track.
 
 Start with `nix-shell --pure`.
 
+## Download Exercises Directly Under apps Directory
+
+Create a symlink from Exercism Elixir track workspace to the `apps` directory:
+
+```bash
+ln -s "$(pwd)/apps" "$(exercism workspace)/elixir"
+```
+
+Then proceed to download exercises as usual with `exercism download
+--exercise=(...) --track=elixir` and they will be under the `apps` directory.
+
 ## Continuous Integration
 
 The exercises are organized under an umbrella project to easily run `mix format`
