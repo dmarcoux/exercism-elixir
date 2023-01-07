@@ -3,7 +3,7 @@ defmodule DNA.MixProject do
 
   def project do
     [
-      app: :dna,
+      app: :dna_encoding,
       version: "0.1.0",
       # elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
