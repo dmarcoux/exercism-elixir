@@ -17,6 +17,8 @@ in
       rebar3
       # Locales
       glibcLocales
+      # Batch rename directories to match application names (see README)
+      rename
     ];
 
     shellHook = ''
