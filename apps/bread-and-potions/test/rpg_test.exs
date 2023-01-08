@@ -1,7 +1,7 @@
-defmodule RPGTest do
+defmodule RpgTest do
   use ExUnit.Case
 
-  alias RPG.{Edible, Character, LoafOfBread, ManaPotion, Poison, EmptyBottle}
+  alias Rpg.{Edible, Character, LoafOfBread, ManaPotion, Poison, EmptyBottle}
 
   defmodule NewItem do
     defstruct []

@@ -1,4 +1,4 @@
-defmodule RPG do
+defmodule Rpg do
   defmodule Character do
     defstruct health: 100, mana: 0
   end
