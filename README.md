@@ -28,12 +28,3 @@ exercises don't follow this, since directory names use hyphen to as a word
 separator while application names use underscores. This must be changed for the
 continuous integration to run. Replace underscores by hyphens in application
 names and surround those application names with double quotes in `mix.exs`.
-
-## Pending Tests
-
-Some exercises have pending tests and I prefer to run all of them without having
-to bother with `mix test --include pending`, so I remove all pending tags with:
-
-```bash
-sed -i -e '/@tag :pending/d' apps/**/test/*_test.exs
-```
