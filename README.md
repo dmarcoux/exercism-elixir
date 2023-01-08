@@ -34,6 +34,9 @@ available in the development environment):
 rename 's/-/_/g' apps/*
 ```
 
+_This command is part of the `standardize_exercises` bash function in the
+development environment._
+
 ## Pending Tests
 
 Some exercises have pending tests and I prefer to run all of them without having
@@ -42,3 +45,6 @@ to bother with `mix test --include pending`, so I remove all pending tags with:
 ```bash
 sed -i -e '/@tag :pending/d' apps/**/test/*_test.exs
 ```
+
+_This command is part of the `standardize_exercises` bash function in the
+development environment._
