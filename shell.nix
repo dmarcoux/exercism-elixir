@@ -17,8 +17,6 @@ in
       rebar3
       # Locales
       glibcLocales
-      # Batch rename directories to match application names (see README)
-      rename
     ];
 
     shellHook = ''
@@ -40,12 +38,6 @@ in
 
       # Set the path to the rebar3 package from Nix
       mix local.rebar --if-missing rebar3 ${rebar3}/bin/rebar3
-
-      # Standardize exercises for the CI
-      function standardize_exercises() {
-        rename "s/-/_/g" apps/*
-        sed -i -e "/@tag :pending/d" apps/**/test/*_test.exs
-      }
     '';
 
     # Without this, there are warnings about LANG, LC_ALL and locales.

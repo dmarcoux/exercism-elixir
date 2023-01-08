@@ -26,16 +26,8 @@ learned about continuous integration for Elixir projects.
 For umbrella projects, directory and application names have to match. Exercism
 exercises don't follow this, since directory names use hyphen to as a word
 separator while application names use underscores. This must be changed for the
-continuous integration to run. Replace hyphens with underscores in directory
-names with this [rename](https://github.com/pstray/rename) command (it's
-available in the development environment):
-
-```bash
-rename 's/-/_/g' apps/*
-```
-
-_This command is part of the `standardize_exercises` bash function in the
-development environment._
+continuous integration to run. Replace underscores by hyphens in application
+names and surround those application names with double quotes in `mix.exs`.
 
 ## Pending Tests
 
@@ -45,6 +37,3 @@ to bother with `mix test --include pending`, so I remove all pending tags with:
 ```bash
 sed -i -e '/@tag :pending/d' apps/**/test/*_test.exs
 ```
-
-_This command is part of the `standardize_exercises` bash function in the
-development environment._
