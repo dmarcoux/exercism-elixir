@@ -1,4 +1,4 @@
-defmodule DNA.MixProject do
+defmodule DNAEncoding.MixProject do
   use Mix.Project
 
   def project do
