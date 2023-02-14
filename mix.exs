@@ -12,7 +12,8 @@ defmodule ExercismElixirUmbrella.MixProject do
   defp aliases do
     [
       # Some exercises have pending tests and I prefer to always run all of them without having to bother with typing `--include pending` all the time
-      test: "test --include pending"
+      # Slow tests are also excluded by default since they would take forever in the CI
+      test: "test --include pending --exclude slow"
     ]
   end
 end
