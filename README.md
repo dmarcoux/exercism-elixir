@@ -11,6 +11,7 @@ Start with `nix-shell --pure`.
 Create a symlink from Exercism Elixir track workspace to the `apps` directory:
 
 ```bash
+mkdir -p apps
 ln -s "$(pwd)/apps" "$(exercism workspace)/elixir"
 ```
 
